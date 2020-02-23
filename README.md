@@ -1,7 +1,7 @@
 # eduroam-wifi-Universidad-Politecnica-de-Madrid-UPM
 Configuration of the netctl profile so you are able to connect to the UPM's eduroam wifi.
 Tested in Arch, not using NetworkManager package.
-1. Download the installer (script wrote in python, so you will have to download python 3/2 y python-distro)
+1. Download the installer (script wrote in python, so you will have to download python 3/2 and python-distro)
 
  >http://www.upm.es/UPM/ServiciosTecnologicos/wifi?id=e83fe60106778110VgnVCM10000009c7648a____&fmt=detail
  
