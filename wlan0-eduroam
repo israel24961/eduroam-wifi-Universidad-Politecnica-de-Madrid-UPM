@@ -1,8 +1,11 @@
-#Paste this in: /etc/netctl/
+#Paste this file in: /etc/netctl/
+
 Description='eduroam'
+
 #This you will have to change to the interface you are using
 #use "ip link" in bash and find yours 
 Interface=wlan0
+
 Connection=wireless
 Security=wpa-configsection
 IP=dhcp
@@ -17,14 +20,14 @@ WPAConfigSection=(
         'pairwise=CCMP'
         'group=CCMP TKIP'
         'eap=PEAP'
-
+#####
         #Here your user
         'identity="&&&@alumnos.upm.es"'
 	#Here your password, you might want to hash it, https://wiki.archlinux.org/index.php/Netctl
         'password="PASSWORD"'
         #Here the path to ca.pem, 
         'ca_cert="/root/.cat_installer/ca.pem"'
-        
+######   
         'altsubject_match="DNS:rds.upm.es;DNS:uac.upm.es"'
         'phase2="auth=MSCHAPV2"'
         'anonymous_identity="anonymous@upm.es"'
